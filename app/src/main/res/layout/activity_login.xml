@@ -63,7 +63,7 @@
         android:id="@+id/btnRegistrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/coloralertas"
+        android:backgroundTint="@color/colorsecundario"
         android:onClick="Registrarse"
         android:text="Registrarse"
         android:textColor="@color/colorblanco"
