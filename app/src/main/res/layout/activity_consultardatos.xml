@@ -7,9 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".ConsultardatosActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:title="Consultar Datos"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="@color/colorblanco" />
+
     <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="555dp"
+        android:layout_width="376dp"
+        android:layout_height="573dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +59,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="6dp"
+            android:backgroundTint="@color/colorVerde"
             android:onClick="consultarDatos"
             android:text="Consultar"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            app:icon="@android:drawable/ic_menu_search" />
 
         <TextView
             android:id="@+id/textView9"
@@ -159,6 +177,10 @@
             android:layout_marginTop="6dp"
             android:layout_marginBottom="10dp" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -169,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/colorterciario"
+                android:backgroundTint="@color/colorprimario"
                 android:onClick="actualizarRegistro"
                 android:text="Actualizar"
                 android:textSize="14sp"
@@ -209,21 +231,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:title="Consultar Datos"
-        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:titleTextColor="@color/colorblanco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
