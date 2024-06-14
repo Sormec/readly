@@ -56,7 +56,11 @@ public class InicioActivity extends AppCompatActivity {
         Intent ventanaAyuda = new Intent(this, AyudaActivity.class);
         startActivity(ventanaAyuda);
         return true;
-    }
+        } else if(id == R.id.itemEjercicios) {
+            Intent ventanaEjercicios = new Intent(this, EjerciciosActivity.class);
+            startActivity(ventanaEjercicios);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

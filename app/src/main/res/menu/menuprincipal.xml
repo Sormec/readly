@@ -5,8 +5,8 @@
         android:id="@+id/itemInicio"
         android:title="Inicio" />
     <item
-        android:id="@+id/itemActividades"
-        android:title="Actividades" />
+        android:id="@+id/itemEjercicios"
+        android:title="Ejercicios" />
     <item
         android:id="@+id/itemProgreso"
         android:title="Progreso" />
