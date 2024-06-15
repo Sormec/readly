@@ -76,6 +76,7 @@
                     android:id="@+id/btnEnviar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="guardarDatosAyuda"
                     android:text="Enviar"
                     android:textColorLink="@color/colorprimario"
                     android:textSize="20sp"

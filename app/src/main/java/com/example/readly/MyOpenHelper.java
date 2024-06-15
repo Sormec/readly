@@ -1,5 +1,6 @@
 package com.example.readly;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,6 +16,14 @@ public class MyOpenHelper extends SQLiteOpenHelper {
             "nacionalidad TEXT," +
             "genero TEXT" +
             ");";
+
+    public static final String ayuda = "CREATE TABLE ayuda(" +
+            "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "id_usuario INTEGER," +
+            "comentario TEXT," +
+            "r_bar REAL," +
+            "FOREIGN KEY(id_usuario) REFERENCES usuario(id)" +
+            ");";
     public static final String dbName="Readly.sqlite";
     public static final int dbversion=1;
     public MyOpenHelper(Context context)
@@ -24,6 +33,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(usuario);
+        db.execSQL(ayuda);
 
     }
     @Override
@@ -43,5 +53,19 @@ public class MyOpenHelper extends SQLiteOpenHelper {
         }
 
         return false;
+    }
+
+    @SuppressLint("Range")
+    public int obtenerIdporNombre(String nombre) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT id FROM usuario WHERE nombres = ?";
+        Cursor cursor = db.rawQuery(query, new String[]{nombre});
+
+        int idUsuario = -1; // Valor por defecto si no se encuentra el usuario
+        if (cursor.moveToFirst()) {
+            idUsuario = cursor.getInt(cursor.getColumnIndex("id"));
+        }
+        cursor.close();
+        return idUsuario;
     }
 }
