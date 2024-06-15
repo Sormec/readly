@@ -1,3 +1,5 @@
 /build
 # Ignorar la carpeta build
-.gradle/
+../.gradle
+# Ignorar local properties
+../local.properties
