@@ -5,59 +5,26 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EjerciciosActivity">
-
-    <Button
-        android:id="@+id/btnGuardarr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="644dp"
-        android:text="Guardar"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnLimpiar"
-        android:layout_width="116dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="640dp"
-        android:onClick="borrar"
-        android:text="Limpiar"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="644dp"
-        android:layout_marginEnd="20dp"
-        android:onClick="regresarInicio"
-        android:text="Regresar"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".EjerciciosActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="11dp">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="143dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="188dp"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="128dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/text_D"
-            android:layout_width="35dp"
+            android:layout_width="40dp"
             android:layout_height="48dp"
-            android:onClick="seleccionarOpcion"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc1"
             android:text="d"
             android:textAlignment="center"
             android:textSize="30sp"
@@ -65,9 +32,10 @@
 
         <TextView
             android:id="@+id/text_P"
-            android:layout_width="35dp"
+            android:layout_width="40dp"
             android:layout_height="48dp"
-            android:onClick="seleccionarOpcion"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc1"
             android:text="p"
             android:textAlignment="center"
             android:textSize="30sp"
@@ -75,9 +43,10 @@
 
         <TextView
             android:id="@+id/text_Q"
-            android:layout_width="35dp"
+            android:layout_width="40dp"
             android:layout_height="48dp"
-            android:onClick="seleccionarOpcion"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc1"
             android:text="q"
             android:textAlignment="center"
             android:textSize="30sp"
@@ -85,9 +54,10 @@
 
         <TextView
             android:id="@+id/text_B"
-            android:layout_width="35dp"
+            android:layout_width="40dp"
             android:layout_height="48dp"
-            android:onClick="seleccionarOpcion"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc1"
             android:text="b"
             android:textAlignment="center"
             android:textSize="30sp"
@@ -98,7 +68,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
         android:text="Ejercicios"
         android:textSize="30dp"
@@ -106,15 +76,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSonidoP"
         android:layout_width="136dp"
         android:layout_height="43dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="128dp"
-        android:onClick="reproduceSound"
+        android:onClick="reproduce_P"
         android:text="Sonido"
         android:textAlignment="viewStart"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:icon="@android:drawable/ic_lock_silent_mode_off"
         app:iconSize="19dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,69 +95,66 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="88dp"
         android:text="¿Cual es la letra &quot;p&quot; según el sonido?"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="276dp"
-        android:text="Encuentra la palabra &quot;poco&quot;"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="365dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="392dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/text_Copo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc3"
             android:text="copo"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/text_Paco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc3"
             android:text="paco"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/text_Qoqo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc3"
             android:text="qoqo"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/text_Poco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc3"
             android:text="poco"
             android:textAlignment="center"
             android:textSize="25sp"
@@ -195,60 +163,270 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="383dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="396dp"
-        android:text="Encuentra la combinación correcta:  __ana  /  a__ogante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="344dp"
+        android:text="Encuentra la palabra &quot;poco&quot;"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="58dp"
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="383dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="624dp"
+        android:text="¿Cuál de las siguientes palabras existen?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="792dp"
+        android:onClick="borrar"
+        android:text="Limpiar"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="792dp"
+        android:text="Guardar"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="792dp"
+        android:onClick="regresarInicio"
+        android:text="Regresar"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="163dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="268dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/text_A1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc2"
+            android:text="a"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_E1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc2"
+            android:text="e"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_E2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc2"
+            android:text="e"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc2"
+            android:text="a"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSonidoA"
+        android:layout_width="136dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="268dp"
+        android:onClick="reproduce_A"
+        android:text="Sonido"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_lock_silent_mode_off"
+        app:iconSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="216dp"
+        android:text=" ¿Cuál es la letra &quot;a&quot; según el sonido?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="556dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_R_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc4"
             android:text="r / r"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/text_RR_r"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc4"
             android:text="rr / r"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/text_RR_rr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc4"
             android:text="rr / rr"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/text_R_rr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc4"
             android:text="r / rr"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="383dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="476dp"
+        android:text="Encuentra la combinación correcta:  __ana  /  a__ogante"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="692dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_Brado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc5"
+            android:text="brado"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_Bravo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc5"
+            android:text="bravo"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_Brano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc5"
+            android:text="brano"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_Cravo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abeezee"
+            android:onClick="seleccionarOpc5"
+            android:text="cravo"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold" />

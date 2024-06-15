@@ -98,7 +98,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/text_RR_r"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="16dp"
