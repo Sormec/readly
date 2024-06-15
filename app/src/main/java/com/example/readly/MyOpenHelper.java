@@ -1,6 +1,7 @@
 package com.example.readly;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 public class MyOpenHelper extends SQLiteOpenHelper {
@@ -28,5 +29,19 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+    }
+    //verificación de credenciales para iniciar sesión
+    public boolean checkCredenciales(String Nombre, String Cedula) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT * FROM usuario WHERE nombres = ? AND cedula = ?";
+        Cursor cursor = db.rawQuery(query, new String[]{Nombre, Cedula});
+
+        if (cursor != null) {
+            boolean isUserFound = cursor.getCount() > 0;
+            cursor.close();
+            return isUserFound;
+        }
+
+        return false;
     }
 }
