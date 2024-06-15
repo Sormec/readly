@@ -209,7 +209,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorsecundario"
                 android:onClick="eliminarRegistro"
-                android:text="Eliminar"
+                android:text="Borrar"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 

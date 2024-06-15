@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".RegistrosActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="411dp"
-        android:layout_height="56dp"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -26,17 +26,17 @@
 
     <TextView
         android:id="@+id/txtMostrarRegistros"
-        android:layout_width="345dp"
-        android:layout_height="570dp"
+        android:layout_width="325dp"
+        android:layout_height="462dp"
         android:background="@color/colorsecundario"
         android:backgroundTint="@color/colorsecundario"
         android:textColor="@color/colorblanco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/btnRegresar"
@@ -49,9 +49,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.974" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
